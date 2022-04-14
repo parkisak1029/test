@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var len = prompt("100");
+        len = Number(len);
+        var arr = new Array();
+
+        arr.push(0, 1);
+
+        for (var i = 2; i <= len - 1; i++){
+            arr.push(arr[i - 1] + arr[i-2]);
+            
+        }
+        var arr1 = arr[arr.length - 1];
+            document.writeln(arr1);
+    </script>
+</body>
+
+</html>
